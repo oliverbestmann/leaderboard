@@ -23,4 +23,8 @@ Response:
 ## Hosting
 
 You can either use the publicly available instance of the service, or run it yourself.
-There is a docker container available `docker run --port 8080:8080  ghcr.io/oliverbestmann/leaderboard`.
+There is a docker container available.
+
+```sh
+docker run -d --name=leaderboard -p 8080:8080 -v leaderboard-db:/db ghcr.io/oliverbestmann/leaderboard
+```
